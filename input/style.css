@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: #2C7566;
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsla(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.edge {
+    width: 0;
+    height:0;
+    border: 25px solid transparent;
+    /* border-top: 0; */
+    border-right: 0;
+    border-bottom: 30px solid white;
+}

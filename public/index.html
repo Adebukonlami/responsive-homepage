@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/91f73a2095.js" crossorigin="anonymous"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="w-full">
+
+  <!-- hero section -->
+  <header class="bg-hero bg-cover bg-center">
+    <div class="pb-64 md:pb-80">
+      <div class=" md:flex md:align-middle md:justify-between p-8">
+        <div class="flex justify-between">
+          <div>
+            <img src="images/logo.svg" class="w-26 py-2 " alt="logo">
+          </div>
+
+          <div class="cursor-pointer md:hidden">
+            <img src="images/icon-hamburger.svg" class="py-2" alt="harm-burger" id="burger" >
+          </div>  
+        </div>
+
+        <div class=" relative mt-20 md:mt-0"  >
+          <div id="menu" class="hidden md:flex" >
+            <div class="edge absolute right-0 z-50 -mt-12 md:hidden" ></div>
+            <ul class="absolute md:static z-40 w-full bg-myWhite md: bg-none text-center pt-8 pb-16 md:py-0 md:bg-transparent md:flex md:align-middle text-grayishBlue md:text-myWhite font-bold md:font-normal text-xl md:text-sm"  >
+            <!-- <ul class="absolute md:static z-99 w-full bg-myWhite md: bg-none text-center pt-8 pb-16 hidden md:py-0 md:bg-transparent md:flex md:align-middle text-grayishBlue md:text-myWhite font-bold md:font-normal text-xl md:text-sm"  > -->
+
+              <li class="pr-8 md:mt-0 mt-4 px-4 py-3"><a href="#">About</a></li>
+              <li class="pr-8 md:mt-0 mt-4 px-4 py-3"><a href="#">Services</a></li>
+              <li class="pr-8 md:mt-0 mt-4 px-4 py-3"><a href="#">Projects</a></li>
+              <li class="px-6 inline-block py-3 bg-myYellow mt-8 md:mt-0 md:bg-myWhite md:hover:bg-white md:hover:bg-opacity-30 md:hover:text-myWhite text-darkDesaturatedBlue uppercase font-bold font-secondary rounded-full "><a href="">contact</a></li>
+            </ul>
+          </div>
+  
+          </div>
+      </div>
+  
+      <div class="md:mt-32 text-center">
+        <h1 class=" px-4 uppercase font-secondary font-black text-5xl text-myWhite tracking-widest">we are creatives</h1>
+      </div>
+  
+      <div class="mt-24">
+        <img src="images/icon-arrow-down.svg" class="mx-auto h-40 w-10" alt="">
+      </div>
+  
+    </div>
+  
+  </header>
+
+  <!-- First column grid section -->
+  <section class="grid grid-cols-1 md:grid-cols-2">
+    <div class="bg-myWhite order-last md:order-none text-center md:text-left px-8 py-12 m-auto md:pl-36 md:pr-32">
+      <h2 class="text-3xl text-darkDesaturatedBlue font-secondary font-black">Transform your brand</h2>
+      <p class="text-darkGrayishBlue my-8 text-sm md:text-base font-primary font-bold ">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <a href="#" class="font-secondary font-black inline-block h-5 border-b-8 pb-0 px-1 border-yellow-100 hover:border-myYellow rounded text-darkDesaturatedBlue text-sm" >LEARN MORE</a>
+    </div>
+    <div>
+      <img src="images/desktop/image-transform.jpg" class="h-full w-full object-cover" alt="egg-image">
+    </div>
+  </section>
+
+  <!-- Second column grid section -->
+  <section class="grid grid-cols-1 md:grid-cols-2">
+    <div>
+      <img src="images/desktop/image-stand-out.jpg" class="h-full w-full object-cover" alt="image-standout">
+    </div>
+    <div class="bg-myWhite order-last md:order-none text-center md:text-left px-8 py-12 m-auto md:pl-36 md:pr-32">
+      <h2 class="text-3xl text-darkDesaturatedBlue font-secondary font-black">Stand out to the right audience</h2>
+      <p class="text-darkGrayishBlue my-8 text-sm md:text-base font-primary font-bold ">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+      <a href="#" class="font-secondary font-black inline-block h-5 border-b-8 px-1 border-red-100 hover:border-softRed rounded  text-darkDesaturatedBlue text-sm" >LEARN MORE</a>
+    </div>
+
+  </section>
+
+  <!-- Third column grid section -->  
+  <section class="grid grid-cols-1 md:grid-cols-2">
+    <div class="relative ">
+      <img src="images/desktop/image-graphic-design.jpg" class="h-full w-full object-cover" alt="image-graphic-design">
+      <div class="absolute -bottom-1 md:bottom-4 text-center px-10 md:px-36">
+        <h3 class="text-3xl text-darkCyan font-secondary font-bold">Graphic Design</h3>
+        <p class="text-darkCyan my-8 text-sm md:text-base font-primary ">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+    </div>
+
+    <div class=" relative">
+      <img src="images/desktop/image-photography.jpg" class="h-full w-full object-cover" alt="image-photography">
+      <div class="absolute -bottom-1 md:bottom-4 text-center px-10 md:px-40">
+        <h3 class="text-3xl text-darkBlue font-secondary font-bold">Photography</h3>
+        <p class="text-darkBlue my-8 text-sm md:text-base font-primary ">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Testimonial section -->
+  <section class="px-8 py-12 md:py-32 md:px-40">
+    <div class="mb-16">
+      <h5 class="uppercase font-secondary font-black text-grayishBlue tracking-widest text-center">Client Testimonials</h5>
+    </div>
+
+    <div class="md:flex px-8">
+      <div class="mb-16 md:mb-0 pr-8">
+        <img src="images/image-emily.jpg" alt="Emily" class="rounded-full  m-auto w-14 mb-8 md:mb-10">
+        <p class="font-primary text-center leading-6 text-sm text-darkGrayishBlue">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <h6 class="font-secondary text-center mt-6 md:mt-12 font-black text-darkDesaturatedBlue">Emily R.</h6>
+        <p class="font-primary text-center mt-1 text-gray-300 font-thin text-xs">Marketing Director</p>
+      </div>
+      <div class="mb-16 md:mb-0 pr-8">
+        <img src="images/image-thomas.jpg" alt="Thomas" class="rounded-full m-auto w-14 mb-8 md:mb-10">
+        <p class="font-primary text-center leading-6 text-sm text-darkGrayishBlue">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <h6 class="font-secondary text-center mt-6 md:mt-12 font-black text-darkDesaturatedBlue">Thomas S.</h6>
+        <p class="font-primary text-center text-gray-300 font-thin text-xs">Chief Operating Officer</p>
+      </div>
+      <div class="">
+        <img src="images/image-jennie.jpg" alt="Jennie" class="rounded-full m-auto w-14 mb-8 md:mb-10">
+        <p class="font-primary text-center leading-6 text-sm text-darkGrayishBlue">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h6 class="font-secondary text-center mt-6 md:mt-12 font-black text-darkDesaturatedBlue">Jennie F.</h6>
+        <p class="font-primary text-center text-gray-300 font-thin text-xs">Business Owner</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery section -->
+  <section class="grid grid-cols-2 md:grid-cols-4">
+    <div>
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
+    </div>
+    <div>
+      <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
+    </div>
+    <div>
+      <img src="images/desktop/image-gallery-cone.jpg" alt="cone">
+    </div>
+    <div>
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+    </div>
+
+  </section>
+
+  <!-- Footer section -->
+  <footer class="bg-green-600 bg-opacity-50 py-16">
+    <img src="images/logo copy.svg" alt="logo" class="m-auto">
+    <div class=" flex justify-center mt-10">
+      <a href="#" class="mr-10 text-sm text-darkCyan hover:text-myWhite font-primary ">About</a>
+      <a href="#" class="mr-10 text-sm text-darkCyan hover:text-myWhite font-primary">Services</a>
+      <a href="#" class="text-sm text-darkCyan hover:text-myWhite font-primary">Projects</a>
+    </div>
+    <div class="flex justify-center mt-16">
+      <a href="#" class="mr-6 fill-current text-darkCyan hover:fill-current hover:text-myWhite"><i class="fab fa-facebook-square fa-lg"></i></a>
+      <a href="#" class="mr-6 fill-current text-darkCyan hover:fill-current hover:text-myWhite"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="mr-6 fill-current text-darkCyan hover:fill-current hover:text-myWhite"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="fill-current text-darkCyan hover:fill-current hover:text-myWhite"><i class="fab fa-pinterest fa-lg"></i></a>
+    </div>
+    
+  </footer>
+
+  <div class="bg-darkCyan font-primary text-xs text-center font-thin py-4">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="font-secondary font-light text-xs text-white" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" class="font-secondary font-light text-xs text-white">Adebukonla</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
