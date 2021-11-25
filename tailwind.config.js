@@ -23,9 +23,9 @@ module.exports = {
         myWhite: 'var(--white)',
       },
 
-      backgroundImage: {
-        hero: "url('/public/images/desktop/image-header.jpg')"
-      }
+      // backgroundImage: {
+      //   hero: "url('/public/images/desktop/image-header.jpg')"
+      // }
     },
   },
   variants: {
